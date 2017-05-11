@@ -1,8 +1,12 @@
 * {
 
 }
+body{
+	width:100%;
+}
 
 .banner{
+	position:relative;
 	width: 100%; /* Ширина блока с учетом padding */
     min-height: 645px; /* Минимальная высота */
 	background-image: url(../images/banner.png);
@@ -11,9 +15,9 @@
 }
 .banner-title{
 	    display:inline-block;
-    position:absolute;
-    top:30px;   
-    left:80px;
+    position: absolute;
+    margin-top:30px;   
+    margin-left:20%;
      
     color:#FFF;
     font-family:Arial, Helvetica, sans-serif;
@@ -21,7 +25,7 @@
 }
 .banner-city{
 	display:inline-block;
-	position: absolute;
+	position: relative;
 	top: 170px;
 	left: 80px;
 
