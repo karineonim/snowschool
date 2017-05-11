@@ -2,6 +2,30 @@
 
 }
 
-.page-header {
-	background-color: yellow;
+.banner{
+	width: 100%; /* Ширина блока с учетом padding */
+    min-height: 645px; /* Минимальная высота */
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.banner-title{
+	    display:inline-block;
+    position:absolute;
+    top:30px;   
+    left:80px;
+     
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:40px; 
+}
+.banner-city{
+	display:inline-block;
+	position: absolute;
+	top: 170px;
+	left: 80px;
+
+	color:#FFF;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 25px;
 }
