@@ -2,34 +2,125 @@
 
 }
 body{
-	width:100%;
+	width: 100%;
 }
-
+/*БАННЕР*/
 .banner{
-	position:relative;
+	
 	width: 100%; /* Ширина блока с учетом padding */
     min-height: 645px; /* Минимальная высота */
 	background-image: url(../images/banner.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	display: block;
 }
+
 .banner-title{
 	    display:inline-block;
-    position: absolute;
-    margin-top:30px;   
-    margin-left:20%;
-     
+    
+    top:30px;   
+    left:10%;
+    position: absolute; 
     color:#FFF;
     font-family:Arial, Helvetica, sans-serif;
     font-size:40px; 
 }
 .banner-city{
 	display:inline-block;
-	position: relative;
+	
 	top: 170px;
-	left: 80px;
-
+	left: 10%;
+    position: relative;
 	color:#FFF;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 25px;
 }
+/*ВЕРХНЯЯ МЕНЮШКА*/
+.page-header {
+  width: 90%;
+  text-align: left;
+  background: #FFF;
+  
+  overflow: hidden;
+  margin-top: 2%;
+  margin-left: 8%;
+  margin-right: 8%;
+
+}
+.logo {
+  width: 10%;
+  float: left;
+ text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-family: "FuturaPT Bold", sans-serif;
+  border: 4px double black; /* Параметры границы */
+    background: #fff; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+}
+.main-nav {
+  width: ;
+  float: left;
+  
+  border-right: 3px solid #fff;
+}
+.page-header-phone {
+  width: 15%;
+  float: left;
+ text-align: center;
+  text-decoration: none;
+  color: #000;
+  margin-top: 1%;  
+
+}
+.btn {
+  width: ;
+  float: left;
+ text-align: right;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  border: 4px double black; /* Параметры границы */
+    background: #fff; /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+}
+.link-nav{
+  color: #fff;
+  font-size: 90%;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+}
+[class*="link-nav"] a {
+  color: #000;
+  font-family: "FuturaPT Medium", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+}
+.main-nav .link-nav {
+  margin: 0 15px;
+}
+
+/*УЧАСТНИКИ*/
+.ice-ace {
+  width: 100%;
+  text-align: center;
+  background: #FFF;
+  
+  overflow: hidden;
+  margin-top: 2%;
+  
+}
+[class*="ice-ace-container"] img {
+	border: 2px; /* Рамка вокруг фотографии */
+    padding: 2px; /* Расстояние от картинки до рамки */
+    background: #fff; /* Цвет фона */
+    margin-right: 10px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
