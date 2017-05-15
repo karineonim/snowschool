@@ -23,6 +23,12 @@
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 25px;
 }
+.banner-footer {
+    height: 306px; /* Минимальная высота */
+	background-image: url(../images/footer.png);
+	background-position: center; 
+	background-size: cover;
+}
 /*ВЕРХНЯЯ МЕНЮШКА*/
 .page-header {
   
@@ -44,7 +50,7 @@ color: #000;
 font-size: 20px;
 font-family: "FuturaPT Bold", sans-serif;
 border: 4px solid black; 
-background: #fff; 
+background: transparent; 
 padding: 10px; 
 }
 .main-nav {
@@ -76,11 +82,9 @@ padding: 10px;
     padding: 10px; 
 }
 .link-nav{
-	display: inline-block;
-
+  display: inline-block;
   color: #fff;
   text-decoration: none;
-  display: inline-block;
   vertical-align: top;
 }
 [class*="link-nav"] a {
@@ -114,4 +118,96 @@ box-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-right: 10px; 
     margin-bottom: 10px; 
 }*/
+
+
+/*ПОДВАЛ*/
+.page-footer {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: top;
+}
+.social-footer{
+	display: inline-block;
+	margin-top: 60px;
+}
+.social-footer> a.logo{
+	/*margin-bottom: 130px;*/
+	float: left;
+	line-height: 30px;
+}
+.footer-nav {
+  display: inline-block;
+  width: 900px;  
+  text-align: center;
+  vertical-align: top;
+  /*float: left;*/
+}
+.link-social{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+
+}
+[class*="link-social"] a {
+  color: #000;
+  font-family: "FuturaPT Medium", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 20px;
+  
+}
+
+.social img {
+  display: inline-block;
+  padding: 30px;
+
+}
+.footer-contact{
+	display: inline-block;
+	width: 120px;
+	margin-left: 40px;
+}
+.page-footer-phone{
+	display: inline-block;
+  width: 200px;
+  /*float: left;*/
+ text-align: right;
+  text-decoration: none;
+  color: #000;
+  margin-top: 20px;  
+  font-size: 20px;
+
+}
+.page-footer-email{
+	display: inline-block;
+  width: 200px;
+  /*float: left;*/
+ text-align: right;
+  text-decoration: none;
+  color: #000;
+  
+  font-size: 20px;
+  
+}
+.author-footer{
+	display: inline-block;
+	margin-top: 30px;
+	vertical-align: bottom;
+}
+.page-footer-text{
+	/*float: left;*/
+	display: inline-block;
+	text-align: left;
+	width: 300px;
+	margin-right: 230px;
+
+}
+
+.author-footer .main-nav {
+	/*display: inline-block;*/
+	text-align: right;
+	float: right;
+	margin-top: 5px;
+}
 
