@@ -1,15 +1,17 @@
 .container{
-	width: 1280px;
+	width: 1160px;
 	padding: 0 15px;
-	margin: 0 30px 0 30px;
+	margin: 0 auto;
 	overflow: hidden;
 }
 /*БАННЕР*/
 .banner{
     min-height: 645px; /* Минимальная высота */
+	min-width: 1280px;
 	background-image: url(../images/banner.png);
 	background-position: center; 
-	background-size: cover;
+	background-repeat: no-repeat;
+	
 }
 
 .banner-title{
@@ -25,25 +27,23 @@
 }
 .banner-footer {
     height: 306px; /* Минимальная высота */
+	min-width: 1278px;
 	background-image: url(../images/footer.png);
 	background-position: center; 
-	background-size: cover;
+	background-repeat: no-repeat;
 }
 /*ВЕРХНЯЯ МЕНЮШКА*/
 .page-header {
   
-  text-align: center;
+  text-align: left;
   background: #FFF;
   
   overflow: hidden;
   margin-top: 14px;
-  
-
 }
 .logo {
 display: inline-block;
 width: 100px;
-/*float: left;*/
 text-align: center;
 text-decoration: none;
 color: #000;
@@ -51,18 +51,16 @@ font-size: 20px;
 font-family: "FuturaPT Bold", sans-serif;
 border: 4px solid black; 
 background: transparent; 
-padding: 10px; 
+padding: 10px;
+padding-right:0; 
 }
 .main-nav {
 	display: inline-block;
-
-  width: 750px;
-  /*float: left;*/
+  width: 700px;
 }
 .page-header-phone {
 	display: inline-block;
-  width: 200px;
-  /*float: left;*/
+  width: 190px;
  text-align: center;
   text-decoration: none;
   color: #000;
@@ -71,8 +69,6 @@ padding: 10px;
 }
 .btn {
 	display: inline-block;
-  
-  /*float: left;*/
  text-align: right;
   text-decoration: none;
   color: #000;
@@ -101,10 +97,49 @@ box-shadow: 0 0 10px rgba(0,0,0,0.5);
   margin: 0 15px;
 }
 
+/*НАШИ УСЛУГИ*/
+.offers{
+margin-top: 30px;
+}
+.title{
+	text-align: center;
+}
+.offers-subtitle{
+	text-align: center;
+}
+.offers-item{
+	display: inline-block;
+	width:30%;
+	margin-bottom: -70px;
+	vertical-align: top;
+	padding: 15px;
+}
+.offers-item-title{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -2px;
+}
+.offers-item-text{
+	display: inline-block;
+	text-align: justify;
+}
+.offers-item-footer{
+	display: inline-block;
+	line-height: 15;
+	width: 100%;
+}
+.offers-item-length{
+	display: inline-block;
+	text-align: left;
+}
+.offers-item-link a{
+	float: right;
+}
+
 /*УЧАСТНИКИ*/
 .ice-ace {
   width: 100%;
-  text-align: center;
+  text-align: left;
   background: #FFF;
   
   overflow: hidden;
@@ -113,12 +148,15 @@ box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 [class*="ice-ace-container"] img {
 	border: 2px; 
-    padding: 2px; 
+    padding: 6.6px; 
     background: #fff; 
-    margin-right: 10px; 
     margin-bottom: 10px; 
-}*/
-
+    float: left;
+}
+.ice-ace-container: last-child {
+margin-right: 0;
+padding-right: 0;
+}
 
 /*ПОДВАЛ*/
 .page-footer {
@@ -132,16 +170,14 @@ box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	margin-top: 60px;
 }
 .social-footer> a.logo{
-	/*margin-bottom: 130px;*/
 	float: left;
 	line-height: 30px;
 }
 .footer-nav {
   display: inline-block;
-  width: 900px;  
+  width: 800px;  
   text-align: center;
   vertical-align: top;
-  /*float: left;*/
 }
 .link-social{
   display: inline-block;
@@ -171,7 +207,6 @@ box-shadow: 0 0 10px rgba(0,0,0,0.5);
 .page-footer-phone{
 	display: inline-block;
   width: 200px;
-  /*float: left;*/
  text-align: right;
   text-decoration: none;
   color: #000;
@@ -182,7 +217,6 @@ box-shadow: 0 0 10px rgba(0,0,0,0.5);
 .page-footer-email{
 	display: inline-block;
   width: 200px;
-  /*float: left;*/
  text-align: right;
   text-decoration: none;
   color: #000;
@@ -196,18 +230,21 @@ box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	vertical-align: bottom;
 }
 .page-footer-text{
-	/*float: left;*/
 	display: inline-block;
 	text-align: left;
 	width: 300px;
-	margin-right: 230px;
+	margin-right: 150px;
 
 }
 
 .author-footer .main-nav {
-	/*display: inline-block;*/
+	display: inline-block;
 	text-align: right;
-	float: right;
-	margin-top: 5px;
+	/*float: right;*/
+	/*margin-top: 5px;*/
 }
+/*.link-social: last-child {
+	margin-right: 0;
+	padding-left: 40px;	
+}*/
 
