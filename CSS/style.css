@@ -31,11 +31,11 @@
 	font-size: 38px;
 }
 .banner-footer {
-    height: 306px; /* Минимальная высота */
-	min-width: 1278px;
 	background-image: url(../images/footer.png);
 	background-position: center; 
 	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 .banner-sale {
     height: 362px; /* Минимальная высота */
@@ -52,7 +52,13 @@
   font-size: 0;
   overflow: hidden;
 
-  /*padding: 14px 0;*/
+  padding: 14px 0;
+}
+.page-header-index{
+	padding-top: 0;
+}
+.page-header-index > .container{
+	margin-top: 14px;
 }
 .logo {
 	display: inline-block;
@@ -82,7 +88,7 @@
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  vertical-align: top;
+  vertical-align: middle;
   /*margin-top: -15px;*/
 }
 [class*="link-nav"] a {
@@ -101,7 +107,7 @@
 }*/
 .call-box{
 display: inline-block;
-width: 242.81px;
+width: 240px;
 text-align: center;
 vertical-align: middle;
 }
@@ -121,7 +127,7 @@ vertical-align: middle;
 }
 .btn-box{
 	display: inline-block;
-	width: 157.19px;
+	width: 160px;
 	text-align: right;
 	vertical-align: middle;
 }
@@ -143,7 +149,7 @@ vertical-align: middle;
 }
 .btn-header{
 	display: inline-block;
-	width: 135px;
+	max-width: 100%;
 	white-space:nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden; 
