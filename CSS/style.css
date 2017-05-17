@@ -6,11 +6,15 @@
 }
 /*БАННЕР*/
 .banner{
-    min-height: 645px; /* Минимальная высота */
-	min-width: 1280px;
+	padding-top: 113px;
+	padding-bottom: 379px;
+    /*min-height: 645px;  Минимальная высота 
+	min-width: 1280px;*/
 	background-image: url(../images/banner.png);
 	background-position: center; 
 	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
 	
 }
 
@@ -33,14 +37,22 @@
 	background-position: center; 
 	background-repeat: no-repeat;
 }
+.banner-sale {
+    height: 362px; /* Минимальная высота */
+	min-width: 1280px;
+	background-image: url(../images/sales.png);
+	background-position: center; 
+	background-repeat: no-repeat;
+}
 /*ВЕРХНЯЯ МЕНЮШКА*/
 .page-header {
   
   text-align: left;
   background: #FFF;
-  
+  font-size: 0;
   overflow: hidden;
-  margin-top: 14px;
+
+  /*padding: 14px 0;*/
 }
 .logo {
 	display: inline-block;
@@ -53,12 +65,43 @@
 	border: 4px solid black; 
 	background: transparent; 
 	padding: 10px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	margin-top: 10px;
 /*padding-right:0; */
 }
 .main-nav {
       display: inline-block;
-	  width: 650px;
-	  margin-left: -30px;
+	  width: 600px;
+	  text-transform: uppercase;
+	  text-align: left;
+	  /*margin-left: -10px;*/
+}
+.link-nav{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: top;
+  margin-top: -15px;
+}
+[class*="link-nav"] a {
+  color: #000;
+  font-family: "FuturaPT Medium", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 0 15px;
+  /*box-sizing: border-box;*/
+}
+.main-nav a:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/*.main-nav .link-nav {
+  	margin: 0 15px;
+}*/
+.call-box{
+display: inline-block;
+width: 242.81px;
+text-align: center;
 }
 .page-header-phone {
 	display: inline-block;
@@ -68,41 +111,42 @@
   	color: #000;
   	margin-top: 13px;  
   	font-size: 20px;
-  	margin-left: 5px;
+  	/*margin-left: 5px;
+  	margin-right: 15px;*/
   	font-family: "FuturaPT Demi", sans-serif;
 	font-size: 22px;
+/*	text-align: center;*/
 }
+.btn-box{
+	display: inline-block;
+	width: 157.19px;
+	
+}
+
 .btn {
 	display: inline-block;
- 	text-align: right;
+ 	text-align: center;
   	text-decoration: none;
   	color: #000;
   	font-family: "FuturaPT Heavy", sans-serif;
 	font-size: 15px;
  	color: #74e196;
+ 	background: transparent; 
   	border: 4px solid black; 
-    background: #fff; 
-    padding: 15px; 
+    padding: 8px; 
+    box-sizing: border-box;
+    text-transform: uppercase;
 }
-.link-nav{
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  vertical-align: top;
+.btn-header{
+	display: inline-block;
+	width: 135px;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden; 
+
 }
-[class*="link-nav"] a {
-  color: #000;
-  font-family: "FuturaPT Medium", sans-serif;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 2px;
-}
-.main-nav a:hover{
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.main-nav .link-nav {
-  	margin: 0 15px;
-}
+
+
 
 /*НАШИ УСЛУГИ*/
 .offers{
@@ -152,7 +196,38 @@
 .offers-item-link a{
 	float: right;
 	text-decoration: none;
-	margin-top: 0;
+	margin-top: -18px;
+	font-family: "PTSans Regular", sans-serif;
+	font-size: 50px;
+ 	color: #74e196;
+}
+
+/*СКИДКИ И АБОНЕМЕНТЫ*/
+.sale{
+	color: white;
+
+}
+.sale-item{
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	text-align: center;
+}
+.sale-text{
+
+}
+p.sale-text{
+	width: 50%;
+	padding-left: 95px;
+}
+.sale a{
+	display: inline-block;
+	margin-left: 460px;
+	margin-top: 40px;
+	border: 2px solid white; 
+}
+.sale-item .procent{
+	color: #74e196;
 }
 
 /*УЧАСТНИКИ*/
@@ -161,7 +236,7 @@
   	width: 100%;
   	text-align: left;
   	background: #FFF;
-  	margin-left: 95px;
+  	/*margin-left: 95px;*/
   	overflow: hidden;
   	margin-top: 2%;
   
@@ -223,7 +298,7 @@
 .footer-contact{
 	display: inline-block;
 	width: 120px;
-	margin-left: -55px;
+	float: right;
 }
 .page-footer-phone{
 	display: inline-block;
@@ -269,7 +344,7 @@
 	padding-left: 40px;	
 }*/
 .link-nav:last-child {
-	margin-right: -80px;
+	margin-right: -40px;
 }
 .logo:first-child {
 	padding-right: 10px;
