@@ -67,7 +67,8 @@
 	padding: 10px;
 	text-transform: uppercase;
 	box-sizing: border-box;
-	margin-top: 10px;
+	vertical-align: middle;
+	/*margin-top: 10px;*/
 /*padding-right:0; */
 }
 .main-nav {
@@ -82,14 +83,14 @@
   color: #fff;
   text-decoration: none;
   vertical-align: top;
-  margin-top: -15px;
+  /*margin-top: -15px;*/
 }
 [class*="link-nav"] a {
   color: #000;
   font-family: "FuturaPT Medium", sans-serif;
   text-decoration: none;
   font-size: 15px;
-  padding: 0 15px;
+  margin: 0 15px;
   /*box-sizing: border-box;*/
 }
 .main-nav a:hover{
@@ -102,6 +103,7 @@
 display: inline-block;
 width: 242.81px;
 text-align: center;
+vertical-align: middle;
 }
 .page-header-phone {
 	display: inline-block;
@@ -109,7 +111,7 @@ text-align: center;
 	text-align: center;
   	text-decoration: none;
   	color: #000;
-  	margin-top: 13px;  
+  	/*margin-top: 13px;*/  
   	font-size: 20px;
   	/*margin-left: 5px;
   	margin-right: 15px;*/
@@ -120,7 +122,8 @@ text-align: center;
 .btn-box{
 	display: inline-block;
 	width: 157.19px;
-	
+	text-align: right;
+	vertical-align: middle;
 }
 
 .btn {
@@ -136,6 +139,7 @@ text-align: center;
     padding: 8px; 
     box-sizing: border-box;
     text-transform: uppercase;
+
 }
 .btn-header{
 	display: inline-block;
