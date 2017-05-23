@@ -1,0 +1,884 @@
+/*ФОНТЫ*/
+
+@font-face {
+  font-family: 'FuturaPT Bold';
+  src: url('../fonts/subset-FuturaPT-Bold.woff2') format('woff2'),
+    url('../fonts/subset-FuturaPT-Bold.woff') format('woff'),
+    url('../fonts/subset-FuturaPT-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT Demi';
+  src: url('../fonts/subset-FuturaPT-Demi.woff2') format('woff2'),
+    url('../fonts/subset-FuturaPT-Demi.woff') format('woff'),
+    url('../fonts/subset-FuturaPT-Demi.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT Medium';
+  src: url('../fonts/subset-FuturaPT-Medium.woff2') format('woff2'),
+    url('../fonts/subset-FuturaPT-Medium.woff') format('woff'),
+    url('../fonts/subset-FuturaPT-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT Heavy';
+  src: url('../fonts/subset-FuturaPT-Heavy.woff2') format('woff2'),
+    url('../fonts/subset-FuturaPT-Heavy.woff') format('woff'),
+    url('../fonts/subset-FuturaPT-Heavy.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Black';
+  src: url('../fonts/subset-Nunito-Black.woff2') format('woff2'),
+    url('../fonts/subset-Nunito-Black.woff') format('woff'),
+    url('../fonts/subset-Nunito-Black.ttf') format('truetype');
+  font-weight: black;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans Regular';
+  src: url('../fonts/subset-PTSans-Regular.woff2') format('woff2'),
+    url('../fonts/subset-PTSans-Regular.woff') format('woff'),
+    url('../fonts/subset-PTSans-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans Bold';
+  src: url('../fonts/subset-PTSans-Bold.woff2') format('woff2'),
+    url('../fonts/subset-PTSans-Bold.woff') format('woff'),
+    url('../fonts/subset-PTSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT Book';
+  src: url('../fonts/subset-FuturaPT-Book.woff2') format('woff2'),
+    url('../fonts/subset-FuturaPT-Book.woff') format('woff'),
+    url('../fonts/subset-FuturaPT-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+ul{
+	padding-left: 0;
+	margin: 0;
+}
+
+.container{
+	width: 1160px;
+	padding: 0 30px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*БАННЕР*/
+.banner{
+	padding-top: 113px;
+	padding-bottom: 379px;
+    /*min-height: 645px;  Минимальная высота 
+	min-width: 1280px;*/
+	background-image: url(../images/banner.png);
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	
+}
+
+.banner-title{
+    color:#FFF;
+    font-family: "FuturaPT Bold", sans-serif;
+    font-size:50px;
+    margin-top: 100px; 
+}
+
+.banner-city{
+	color:#FFF;
+	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 38px;
+}
+.banner-footer {
+	min-height: 306px;
+	background-image: url(../images/footer.jpg);
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.banner-sale {
+    min-height: 362px; /* Минимальная высота */
+	/*min-width: 1280px;*/
+	/*background-image: url(../images/sales.png);*/
+	background-position: center; 
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+
+.banner-command {
+    min-height: 592px; /* Минимальная высота */
+	min-width: 1054px;
+	background-image: /*linear-gradient(to top, #fff, transparent), */url(../images/command.jpg);
+	background-position: center; 
+	text-align: center;
+	background-repeat: no-repeat;
+}
+.teacher-banner{
+	background-image: url(../images/second-page/konstantin-konstantinopol.png);
+	min-height: 270px;
+	min-width: 270px;
+	float: left;
+}
+.comment-banner{
+	background-image: url(../images/second-page/);
+	min-height: 270px;
+	min-width: 270px;
+	
+}
+
+/*ВЕРХНЯЯ МЕНЮШКА*/
+.page-header {
+  
+  text-align: left;
+  background: #FFF;
+  font-size: 0;
+  overflow: hidden;
+
+  padding: 14px 0;
+}
+.page-header-index{
+	padding-top: 0;
+}
+.page-header-index > .container{
+	margin-top: 14px;
+}
+.logo {
+	display: inline-block;
+	width: 160px;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	font-family: "Nunito Black", sans-serif;
+	font-size: 25px;
+	border: 4px solid black; 
+	background: transparent; 
+	padding: 10px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	vertical-align: middle;
+	/*margin-top: 10px;*/
+/*padding-right:0; */
+}
+.main-nav {
+      display: inline-block;
+	  width: 595px;
+	  text-transform: uppercase;
+	  text-align: right;
+	  /*margin-left: -10px;*/
+}
+.link-nav{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+  /*margin-top: -15px;*/
+}
+[class*="link-nav"] a {
+  color: #000;
+  font-family: "FuturaPT Medium", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  /*margin: 0 22px;*/
+  padding-left: 50px;
+  /*box-sizing: border-box;*/
+}
+.main-nav a:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/*.main-nav .link-nav {
+  	margin: 0 15px;
+}*/
+.call-box{
+display: inline-block;
+width: 235px;
+text-align: right;
+vertical-align: middle;
+}
+.page-header-phone {
+	display: inline-block;
+	width: 190px;
+	text-align: center;
+  	text-decoration: none;
+  	color: #000;
+  	/*margin-top: 13px;*/  
+  	font-size: 20px;
+  	/*margin-left: 5px;
+  	margin-right: 15px;*/
+  	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 22px;
+/*	text-align: center;*/
+}
+.btn-box{
+	display: inline-block;
+	width: 170px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.btn {
+	display: inline-block;
+ 	text-align: center;
+  	text-decoration: none;
+  	color: #000;
+  	font-family: "FuturaPT Heavy", sans-serif;
+	font-size: 15px;
+ 	color: #74e196;
+ 	background: transparent; 
+  	border: 2px solid black; 
+    padding: 12px 17px; 
+    box-sizing: border-box;
+    text-transform: uppercase;
+
+}
+.btn-header{
+	display: inline-block;
+	max-width: 100%;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden; 
+
+}
+
+
+
+/*НАШИ УСЛУГИ*/
+.offers{
+	/*margin-top: 30px;*/
+	font-size: 0;
+	padding: 0;
+}
+.title{
+	text-align: center;
+	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 40px;
+}
+.offers-subtitle{
+	text-align: center;
+	font-family: "FuturaPT Medium", sans-serif;
+	font-size: 20px;
+}
+.offers-item{
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  padding: 20px 20px;
+  -webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;	
+}
+
+.offers-item:first-child{padding-left: 0; }
+.offers-item:last-child { padding-right: 0;}
+.offers-item:nth-child(3n) { padding-right: 0;}
+.offers-item:nth-child(4n) { padding-left: 0;}
+.offers-col{
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.offers-col:before {
+  content: '';
+  display: inline-block;
+  height: 160px;
+  vertical-align: top;
+}
+
+.offers-item-title{
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 20px;
+	font-family: "FuturaPT Medium", sans-serif;
+	font-size: 20px;
+	margin: 0;
+}
+.offers-item-text{
+	display: inline-block;
+	text-align: justify;
+  vertical-align: top;
+	/*margin-bottom: 40px;*/
+	font-family: "PTSans Regular", sans-serif;
+	font-size: 15px;
+
+}
+.offers-item-footer{
+	display: inline-block;
+	/*width: 100%;*/
+
+}
+.offers-item-length{
+	/*display: inline-block;*/
+	float: left;
+	text-align: left;
+	font-family: "FuturaPT Medium", sans-serif;
+	font-size: 20px;
+	width: 180px;
+
+}
+.offers-item-link a{
+	float: right;
+	text-decoration: none;
+	/*margin-top: -18px;*/
+	font-family: "PTSans Regular", sans-serif;
+	font-size: 30px;
+ 	/*color: #74e196;
+ 	width: 180px;*/
+ 	text-align: right;
+ 	height: 23px;
+ 	margin-top: -10px;
+}
+/*.fa .fa-arrow-right{
+	width: 100px;
+	height: 10px;
+}*/
+/*
+ПОЧЕМУ МЫ*/
+.about{
+	/*margin-top: 30px;*/
+	font-size: 0;
+	padding: 0;
+}
+.about-item{
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;	
+  	text-align: center;
+  	padding-bottom: 20px;
+}
+.about-col{
+  display: inline-block;
+  /*vertical-align: top;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.about-col:before {
+  content: '';
+  display: inline-block;
+  height: 30px;
+  vertical-align: top;
+}
+.about-item-title{
+	font-family: 'FuturaPT Medium', sans-serif;
+	font-size: 22px;
+	display: inline-block;
+	vertical-align: top;
+}
+.about-item-text{
+	font-family: "PTSans Regular", sans-serif;
+	font-size: 15px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	width: 90%;
+}
+.about-item-garant{
+	display: inline-block;
+	padding-bottom: 15px;
+	height: 70px;
+	vertical-align: middle;
+	/*vertical-align: top;*/
+}
+.about-item:first-child{padding-left: 0; }
+.about-item:last-child { padding-right: 0;}
+.about-item:nth-child(3n) { padding-right: 0;}
+.about-item:nth-child(4n) { padding-left: 0;}
+
+.about-container{
+	padding-bottom: 20px;
+}
+
+
+/*СКИДКИ И АБОНЕМЕНТЫ*/
+
+.sale-item{
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 20px;
+}
+
+p.sale-text{
+	width: 65%;
+	margin: 0 auto;
+	font-family: 'FuturaPT Book', sans-serif;
+	font-size: 20px;
+}
+.sale a{
+	display: inline-block;
+	margin-left: 460px;
+	border: 2px solid white; 
+}
+.sale-title{
+	display: inline-block;
+	padding-bottom: 10px;
+	font-family: 'FuturaPT Medium', sans-serif;
+	font-size: 22px;
+}
+.sale-item .procent{
+	color: #74e196;
+}
+.btn-sale{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: 2px solid white; 
+	display: inline-block;
+	max-width: 100%;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden; 
+}
+
+/*КОМАНДА*/
+.command-container{
+margin-top: 35px;	
+width: 740px;
+height: 620px;
+margin: 0 auto;
+position: relative;
+
+}
+
+
+/*.command-container-text  {
+  width: 65%;
+  display: inline-block;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  
+}*/
+
+/*.command-text:before {
+  content: '';
+  display: inline-block;
+  height: 450px;
+  vertical-align: bottom;
+}*/
+.command-text {
+ position: absolute;
+ bottom: 80px;
+ right: 20px;
+  font-family: "PTSans Regular", sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.command-container> a {
+display: block;
+position: absolute;
+bottom: 0;
+left: calc(50% - 105px);
+}
+
+.btn-command{
+
+
+}
+
+
+/*СООБЩЕСТВО*/
+.community{
+	margin: 0 auto;
+	font-size: 0;
+	padding-top: 70px;
+	
+}
+.community .title{
+	margin: 0;	
+	padding-bottom: 20px;
+}
+.community-container {
+	display: inline-block;
+	text-align: center;
+	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 15px;
+	padding-left: 170px;
+	padding-right: 200px;
+	padding-bottom: 20px;
+}
+
+}
+.community-text{
+	display: inline-block;
+	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+
+}
+
+/*КАРТА*/
+
+.map-item{
+	max-height: 500px;
+	overflow: hidden;
+}
+.map-item iframe{
+	width: 1160px;
+	vertical-align: middle;
+}
+
+/*УЧАСТНИКИ*/
+.ice-ace {
+	display: inline-block;
+  	width: 100%;
+  	text-align: left;
+  	background: #FFF;
+  	/*margin-left: 95px;*/
+  	overflow: hidden;
+  	margin-top: 2%;
+  
+}
+[class*="ice-ace-container"] img {
+	display: inline-block;
+	border: 2px; 
+    padding: 6.6px; 
+    background: #fff; 
+    margin-bottom: 10px; 
+    float: left;
+}
+.ice-ace-container: last-child {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+/*ВТОРАЯ СТРАНИЦА*/
+
+/*КНОПКА ПОИСКА*/
+
+.search {
+  width: 50%;
+  position: relative;
+  border: 2px solid;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.search input {
+  border: none;
+}
+
+.search .input {
+  width: 100%;
+  padding: 8px 37px 9px 15px;
+ -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*background: #EEE;*/
+  font: 15px 'PTSans Regular', sans-serif;
+  color: #555;
+  outline: none;
+}
+
+/*  оформление поля ввода при фокусе */
+.search .input:focus {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+  background: #E8E8E8;
+  color: #333;
+}
+.search .submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+  background: url(../images/second-page/search.png) 
+  50% no-repeat;
+  opacity: 0.5;
+}
+
+/* при наведении курсора - прозрачность кнопки отправки */
+.search .submit:hover {
+  opacity: 0.8;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+/*ИНСТРУКТОРЫ
+*/
+.our-techer-container{
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+
+}
+
+.our-teacher-item{
+	display: inline-block;
+	position: relative;
+}
+.our-teacher-text{
+	display:inline-block;
+    position:absolute;
+    top:100px;   
+    left:0px;
+    font-size: 14px;
+    color: white;
+    font-family: 'FuturaPT Medium', sans-serif;
+	font-size: 20px;
+}
+
+
+/*КОНСТАНТИН КОНСТАНТИНОПОЛЬСКИЙ*/
+
+.teacher-container{
+	font-size: 0;
+	margin-top: 30px;
+
+}
+
+.teacher-name{
+	display: inline-block;
+	width: 890px;
+	vertical-align: top;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.teacher-title{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 24px;
+	text-align: center;
+	width: 600px;
+	padding-top: 0;
+	margin: 0;
+	padding-left: 60px;
+	font-family: 'FuturaPT Medium', sans-serif;
+	font-size: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.btn-teacher{
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	width: 290px;
+	/*padding-bottom: 2px;*/
+}
+
+.btn-teacher> a{
+display: inline-block;
+
+	text-align: right;	
+}
+
+.teacher-sport{
+	display: inline-block;
+	width: 890px;
+	vertical-align: top;
+	margin-top: 40px;
+}
+
+.konstantin-sport{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 230px;
+	font-family: 'FuturaPT Demi', sans-serif;
+	font-size: 20px;
+}
+.konstantin-mark{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 200px;
+}
+.btn-img {
+color: #000;
+font-family: 'FuturaPT Medium'. sans-serif;
+font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px 11px;
+  padding-left: 40px;
+  border-radius: 3px;
+  text-decoration: none;
+  position: relative;	
+  left: 10px;
+}
+
+.btn-img:before{
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top:0; bottom: 0;
+  margin: auto 0;
+  left: 10px;
+  background-image: url(../images/second-page/flash.png);
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-color: #fff;
+  margin-right: 15px;
+}
+.teacher-sm-title{
+	font-family: 'FuturaPT Demi', sans-serif;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.teacher-text{
+	font-size: 17px;
+	font-family: 'FuturaPT Medium', sans-serif;
+}
+.teacher-thank{
+	font-size: 15px;
+	font-family: 'FuturaPT Medium', sans-serif;
+	margin-top: 10px;
+}
+
+/*ОБУЧЕНИЕ*/
+
+.container-education{
+	font-size: 0;
+	margin-top: 15px;
+}
+.education-item{
+	display: inline-block;
+	width: 580px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.education-video{
+	display: inline-block;
+	width: 580px;
+	text-align: right;
+	vertical-align: top;
+}
+
+.education-item-title{
+	font-family: 'FuturaPT Demi', sans-serif;
+	font-size: 20px;
+	vertical-align: top;
+	text-align: left;
+}
+
+.education-item-text{
+	font-size: 15px;
+	vertical-align: top;
+	text-align: left;
+	font-family: 'PTSans Bold', sans-serif;
+}
+
+/*КОММЕНТАРИЙ*/
+
+.comment{
+	display: inline-block;
+
+}
+
+/*ПОДВАЛ*/
+.social-footer{
+	padding-top: 50px;
+}
+.footer-logo{
+	display: inline-block;
+	width: 200px;
+	text-align: left;
+	vertical-align: middle;
+}
+.social-footer> .logo{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.footer-nav{
+	display: inline-block;
+	width: 750px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.link-social{
+	display: inline-block;
+	padding: 0 20px;
+}
+.footer-contact{
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+	vertical-align: middle;
+	padding-top: 5px;
+	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 22px;
+}
+.page-footer-email{
+	font-size: 20px;
+}
+.last-line{
+	padding-top: 50px;
+}
+.author-footer{
+	display: inline-block;
+	width: 500px;
+	text-align: left;
+	vertical-align: middle;
+}
+.page-footer-text{
+	display: inline-block;
+	width: 300px;
+	text-align: left;
+	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 15px;
+}
+.last-line-nav {
+      display: inline-block;
+	  width: 650px;
+	  text-transform: uppercase;
+	  text-align: right;
+	  /*margin-left: -10px;*/
+}
+.last-nav{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+}
+[class*="last-nav"] a {
+  color: #000;
+  font-family: "FuturaPT Medium", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  padding-left: 40px;
+}
+
+
