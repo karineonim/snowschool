@@ -1,3 +1,78 @@
+/*ФОНТЫ*/
+
+@font-face {
+  font-family: 'FuturaPT Bold';
+  src: url('../fonts/subset-FuturaPT-Bold.woff2') format('woff2'),
+    url('../fonts/subset-FuturaPT-Bold.woff') format('woff'),
+    url('../fonts/subset-FuturaPT-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT Demi';
+  src: url('../fonts/subset-FuturaPT-Demi.woff2') format('woff2'),
+    url('../fonts/subset-FuturaPT-Demi.woff') format('woff'),
+    url('../fonts/subset-FuturaPT-Demi.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT Medium';
+  src: url('../fonts/subset-FuturaPT-Medium.woff2') format('woff2'),
+    url('../fonts/subset-FuturaPT-Medium.woff') format('woff'),
+    url('../fonts/subset-FuturaPT-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT Heavy';
+  src: url('../fonts/subset-FuturaPT-Heavy.woff2') format('woff2'),
+    url('../fonts/subset-FuturaPT-Heavy.woff') format('woff'),
+    url('../fonts/subset-FuturaPT-Heavy.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Black';
+  src: url('../fonts/subset-Nunito-Black.woff2') format('woff2'),
+    url('../fonts/subset-Nunito-Black.woff') format('woff'),
+    url('../fonts/subset-Nunito-Black.ttf') format('truetype');
+  font-weight: black;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans Regular';
+  src: url('../fonts/subset-PTSans-Regular.woff2') format('woff2'),
+    url('../fonts/subset-PTSans-Regular.woff') format('woff'),
+    url('../fonts/subset-PTSans-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans Bold';
+  src: url('../fonts/subset-PTSans-Bold.woff2') format('woff2'),
+    url('../fonts/subset-PTSans-Bold.woff') format('woff'),
+    url('../fonts/subset-PTSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT Book';
+  src: url('../fonts/subset-FuturaPT-Book.woff2') format('woff2'),
+    url('../fonts/subset-FuturaPT-Book.woff') format('woff'),
+    url('../fonts/subset-FuturaPT-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 ul{
 	padding-left: 0;
 	margin: 0;
@@ -37,7 +112,7 @@ ul{
 }
 .banner-footer {
 	min-height: 306px;
-	background-image: url(../images/footer.png);
+	background-image: url(../images/footer.jpg);
 	background-position: center; 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -56,11 +131,24 @@ ul{
 .banner-command {
     min-height: 592px; /* Минимальная высота */
 	min-width: 1054px;
-	background-image: url(../images/command.png);
+	background-image: /*linear-gradient(to top, #fff, transparent), */url(../images/command.jpg);
 	background-position: center; 
 	text-align: center;
 	background-repeat: no-repeat;
 }
+.teacher-banner{
+	background-image: url(../images/second-page/konstantin-konstantinopol.png);
+	min-height: 270px;
+	min-width: 270px;
+	float: left;
+}
+.comment-banner{
+	background-image: url(../images/second-page/);
+	min-height: 270px;
+	min-width: 270px;
+	
+}
+
 /*ВЕРХНЯЯ МЕНЮШКА*/
 .page-header {
   
@@ -83,7 +171,7 @@ ul{
 	text-align: center;
 	text-decoration: none;
 	color: #000;
-	font-family: "AvenirNext Bold", sans-serif;
+	font-family: "Nunito Black", sans-serif;
 	font-size: 25px;
 	border: 4px solid black; 
 	background: transparent; 
@@ -96,9 +184,9 @@ ul{
 }
 .main-nav {
       display: inline-block;
-	  width: 600px;
+	  width: 595px;
 	  text-transform: uppercase;
-	  text-align: center;
+	  text-align: right;
 	  /*margin-left: -10px;*/
 }
 .link-nav{
@@ -113,7 +201,8 @@ ul{
   font-family: "FuturaPT Medium", sans-serif;
   text-decoration: none;
   font-size: 15px;
-  margin: 0 15px;
+  /*margin: 0 22px;*/
+  padding-left: 50px;
   /*box-sizing: border-box;*/
 }
 .main-nav a:hover{
@@ -124,8 +213,8 @@ ul{
 }*/
 .call-box{
 display: inline-block;
-width: 240px;
-text-align: center;
+width: 235px;
+text-align: right;
 vertical-align: middle;
 }
 .page-header-phone {
@@ -144,7 +233,7 @@ vertical-align: middle;
 }
 .btn-box{
 	display: inline-block;
-	width: 160px;
+	width: 170px;
 	text-align: right;
 	vertical-align: middle;
 }
@@ -158,8 +247,8 @@ vertical-align: middle;
 	font-size: 15px;
  	color: #74e196;
  	background: transparent; 
-  	border: 4px solid black; 
-    padding: 8px; 
+  	border: 2px solid black; 
+    padding: 12px 17px; 
     box-sizing: border-box;
     text-transform: uppercase;
 
@@ -255,13 +344,17 @@ vertical-align: middle;
 	text-decoration: none;
 	/*margin-top: -18px;*/
 	font-family: "PTSans Regular", sans-serif;
-	font-size: 50px;
- 	color: #74e196;
- 	width: 180px;
+	font-size: 30px;
+ 	/*color: #74e196;
+ 	width: 180px;*/
  	text-align: right;
  	height: 23px;
- 	margin-top: -18px;
+ 	margin-top: -10px;
 }
+/*.fa .fa-arrow-right{
+	width: 100px;
+	height: 10px;
+}*/
 /*
 ПОЧЕМУ МЫ*/
 .about{
@@ -294,15 +387,18 @@ vertical-align: middle;
   vertical-align: top;
 }
 .about-item-title{
+	font-family: 'FuturaPT Medium', sans-serif;
+	font-size: 22px;
 	display: inline-block;
-	font-size: 16px;
 	vertical-align: top;
 }
 .about-item-text{
+	font-family: "PTSans Regular", sans-serif;
+	font-size: 15px;
 	display: inline-block;
-	font-size: 12px;
 	text-align: left;
 	vertical-align: top;
+	width: 90%;
 }
 .about-item-garant{
 	display: inline-block;
@@ -332,8 +428,10 @@ vertical-align: middle;
 }
 
 p.sale-text{
-	width: 43%;
+	width: 65%;
 	margin: 0 auto;
+	font-family: 'FuturaPT Book', sans-serif;
+	font-size: 20px;
 }
 .sale a{
 	display: inline-block;
@@ -343,12 +441,15 @@ p.sale-text{
 .sale-title{
 	display: inline-block;
 	padding-bottom: 10px;
+	font-family: 'FuturaPT Medium', sans-serif;
+	font-size: 22px;
 }
 .sale-item .procent{
 	color: #74e196;
 }
 .btn-sale{
 	margin-top: 50px;
+	margin-bottom: 50px;
 	border: 2px solid white; 
 	display: inline-block;
 	max-width: 100%;
@@ -360,34 +461,92 @@ p.sale-text{
 /*КОМАНДА*/
 .command-container{
 margin-top: 35px;	
-font-size: 0;
-width: 1054px;
+width: 740px;
+height: 620px;
+margin: 0 auto;
+position: relative;
+
 }
 
 
-.command-text  {
+/*.command-container-text  {
   width: 65%;
   display: inline-block;
-  vertical-align: bottom;
+  
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
-}
+  
+}*/
 
-.command-text:before {
+/*.command-text:before {
   content: '';
   display: inline-block;
-  height: 400px;
+  height: 450px;
   vertical-align: bottom;
+}*/
+.command-text {
+ position: absolute;
+ bottom: 80px;
+ right: 20px;
+  font-family: "PTSans Regular", sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
 }
 
 .command-container> a {
- display: block;
- margin: 0 auto;
- margin-bottom: 0;
-width: 250px;
+display: block;
+position: absolute;
+bottom: 0;
+left: calc(50% - 105px);
+}
 
+.btn-command{
+
+
+}
+
+
+/*СООБЩЕСТВО*/
+.community{
+	margin: 0 auto;
+	font-size: 0;
+	padding-top: 70px;
+	
+}
+.community .title{
+	margin: 0;	
+	padding-bottom: 20px;
+}
+.community-container {
+	display: inline-block;
+	text-align: center;
+	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 15px;
+	padding-left: 170px;
+	padding-right: 200px;
+	padding-bottom: 20px;
+}
+
+}
+.community-text{
+	display: inline-block;
+	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+
+}
+
+/*КАРТА*/
+
+.map-item{
+	max-height: 500px;
+	overflow: hidden;
+}
+.map-item iframe{
+	width: 1160px;
+	vertical-align: middle;
 }
 
 /*УЧАСТНИКИ*/
@@ -414,99 +573,312 @@ width: 250px;
 	padding-right: 0;
 }
 
-/*ПОДВАЛ*/
-.page-footer {
-  display: inline-block;
-  text-align: center;
-  overflow: hidden;
-  vertical-align: top;
+/*ВТОРАЯ СТРАНИЦА*/
+
+/*КНОПКА ПОИСКА*/
+
+.search {
+  width: 50%;
+  position: relative;
+  border: 2px solid;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
-.social-footer{
+
+.search input {
+  border: none;
+}
+
+.search .input {
+  width: 100%;
+  padding: 8px 37px 9px 15px;
+ -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*background: #EEE;*/
+  font: 15px 'PTSans Regular', sans-serif;
+  color: #555;
+  outline: none;
+}
+
+/*  оформление поля ввода при фокусе */
+.search .input:focus {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+  background: #E8E8E8;
+  color: #333;
+}
+.search .submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+  background: url(../images/second-page/search.png) 
+  50% no-repeat;
+  opacity: 0.5;
+}
+
+/* при наведении курсора - прозрачность кнопки отправки */
+.search .submit:hover {
+  opacity: 0.8;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+/*ИНСТРУКТОРЫ
+*/
+.our-techer-container{
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+
+}
+
+.our-teacher-item{
 	display: inline-block;
-	margin-top: 60px;
+	position: relative;
 }
-.social-footer> a.logo{
-	float: left;
-	line-height: 30px;
+.our-teacher-text{
+	display:inline-block;
+    position:absolute;
+    top:100px;   
+    left:0px;
+    font-size: 14px;
+    color: white;
+    font-family: 'FuturaPT Medium', sans-serif;
+	font-size: 20px;
 }
-.footer-nav {
+
+
+/*КОНСТАНТИН КОНСТАНТИНОПОЛЬСКИЙ*/
+
+.teacher-container{
+	font-size: 0;
+	margin-top: 30px;
+
+}
+
+.teacher-name{
+	display: inline-block;
+	width: 890px;
+	vertical-align: top;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.teacher-title{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 24px;
+	text-align: center;
+	width: 600px;
+	padding-top: 0;
+	margin: 0;
+	padding-left: 60px;
+	font-family: 'FuturaPT Medium', sans-serif;
+	font-size: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.btn-teacher{
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	width: 290px;
+	/*padding-bottom: 2px;*/
+}
+
+.btn-teacher> a{
+display: inline-block;
+
+	text-align: right;	
+}
+
+.teacher-sport{
+	display: inline-block;
+	width: 890px;
+	vertical-align: top;
+	margin-top: 40px;
+}
+
+.konstantin-sport{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 230px;
+	font-family: 'FuturaPT Demi', sans-serif;
+	font-size: 20px;
+}
+.konstantin-mark{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 200px;
+}
+.btn-img {
+color: #000;
+font-family: 'FuturaPT Medium'. sans-serif;
+font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   display: inline-block;
-  width: 800px;  
-  text-align: center;
-  vertical-align: top;
+  vertical-align: middle;
+  padding: 12px 11px;
+  padding-left: 40px;
+  border-radius: 3px;
+  text-decoration: none;
+  position: relative;	
+  left: 10px;
 }
+
+.btn-img:before{
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top:0; bottom: 0;
+  margin: auto 0;
+  left: 10px;
+  background-image: url(../images/second-page/flash.png);
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-color: #fff;
+  margin-right: 15px;
+}
+.teacher-sm-title{
+	font-family: 'FuturaPT Demi', sans-serif;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.teacher-text{
+	font-size: 17px;
+	font-family: 'FuturaPT Medium', sans-serif;
+}
+.teacher-thank{
+	font-size: 15px;
+	font-family: 'FuturaPT Medium', sans-serif;
+	margin-top: 10px;
+}
+
+/*ОБУЧЕНИЕ*/
+
+.container-education{
+	font-size: 0;
+	margin-top: 15px;
+}
+.education-item{
+	display: inline-block;
+	width: 580px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.education-video{
+	display: inline-block;
+	width: 580px;
+	text-align: right;
+	vertical-align: top;
+}
+
+.education-item-title{
+	font-family: 'FuturaPT Demi', sans-serif;
+	font-size: 20px;
+	vertical-align: top;
+	text-align: left;
+}
+
+.education-item-text{
+	font-size: 15px;
+	vertical-align: top;
+	text-align: left;
+	font-family: 'PTSans Bold', sans-serif;
+}
+
+/*КОММЕНТАРИЙ*/
+
+.comment{
+	display: inline-block;
+
+}
+
+/*ПОДВАЛ*/
+.social-footer{
+	padding-top: 50px;
+}
+.footer-logo{
+	display: inline-block;
+	width: 200px;
+	text-align: left;
+	vertical-align: middle;
+}
+.social-footer> .logo{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.footer-nav{
+	display: inline-block;
+	width: 750px;
+	text-align: center;
+	vertical-align: middle;
+}
+
 .link-social{
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-
-}
-[class*="link-social"] a {
-  color: #000;
-  font-family: "FuturaPT Medium", sans-serif;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 20px;
-  
-}
-
-.social img {
-  display: inline-block;
-  padding: 30px;
-
+	display: inline-block;
+	padding: 0 20px;
 }
 .footer-contact{
 	display: inline-block;
 	width: 200px;
-	float: right;
-}
-.page-footer-phone{
-	display: inline-block;
- 	width: 200px;
- 	text-align: right;
-  	text-decoration: none;
-  	color: #000;
-  	/*margin-top: 20px; */ 
-  	font-size: 20px;
-
+	text-align: right;
+	vertical-align: middle;
+	padding-top: 5px;
+	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 22px;
 }
 .page-footer-email{
-	display: inline-block;
-  	width: 200px;
- 	text-align: right;
-  	text-decoration: none;
-  	color: #000;
-  
-  	font-size: 20px;
-  
+	font-size: 20px;
+}
+.last-line{
+	padding-top: 50px;
 }
 .author-footer{
 	display: inline-block;
-	margin-top: 30px;
-	vertical-align: bottom;
+	width: 500px;
+	text-align: left;
+	vertical-align: middle;
 }
 .page-footer-text{
 	display: inline-block;
-	text-align: left;
 	width: 300px;
-	margin-right: 150px;
-
+	text-align: left;
+	font-family: "FuturaPT Demi", sans-serif;
+	font-size: 15px;
+}
+.last-line-nav {
+      display: inline-block;
+	  width: 650px;
+	  text-transform: uppercase;
+	  text-align: right;
+	  /*margin-left: -10px;*/
+}
+.last-nav{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+}
+[class*="last-nav"] a {
+  color: #000;
+  font-family: "FuturaPT Medium", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  padding-left: 40px;
 }
 
-.author-footer .main-nav {
-	display: inline-block;
-	text-align: right;
-	/*float: right;*/
-	/*margin-top: 5px;*/
-}
-/*.link-social: last-child {
-	margin-right: 0;
-	padding-left: 40px;	
-}*/
-.link-nav:last-child {
-	margin-right: -40px;
-}
-.logo:first-child {
-	padding-right: 10px;
-}
 
