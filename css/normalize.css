@@ -443,7 +443,12 @@ template {
  * Add the correct display in IE 10-.
  */
 
+ .community p{
+  margin: 0;
+ }
+
 [hidden] {
   display: none;
 }
-</pre></body></html>Xtext/cssUUTF-8_;https://necolas.github.io/normalize.css/7.0.0/normalize.css    ( ? Q g … ” •7@F                           „
+</pre></body></html>Xtext/cssUUTF-8_;https://necolas.github.io/normalize.css/7.0.0/normalize.css    ( ? Q g … ” •7@F             
+              „

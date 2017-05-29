@@ -93,8 +93,8 @@ ul{
 }
 /*БАННЕР*/
 .banner{
-	padding-top: 113px;
-	padding-bottom: 379px;
+	/*padding-top: 113px;
+	padding-bottom: 379px;*/
     /*min-height: 645px;  Минимальная высота 
 	min-width: 1280px;*/
 	background-image: url(../images/banner.png);
@@ -102,7 +102,7 @@ ul{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
-	
+	height: 100vh;
 }
 
 .banner-title{
@@ -137,13 +137,19 @@ ul{
 }
 
 .banner-command {
+	position: relative;
     min-height: 592px; /* Минимальная высота */
 	min-width: 1054px;
-	background-image: /*linear-gradient(to top, #fff, transparent), */url(../images/command.jpg);
+	background-image: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 53%), 
+	url(../images/command-w-gr.jpg);
+	background-image: -webkit-linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 53%), 
+	url(../images/command-w-gr.jpg);  
 	background-position: center; 
 	text-align: center;
 	background-repeat: no-repeat;
 }
+
+
 .teacher-banner{
 	background-image: url(../images/second-page/konstantin-konstantinopol.png);
 	min-height: 270px;
@@ -263,13 +269,18 @@ vertical-align: middle;
   	color: #000;
   	font-family: "FuturaPT Heavy", sans-serif;
 	font-size: 15px;
- 	color: #74e196;
+ 	color: #75e097;
  	background: transparent; 
   	border: 2px solid black; 
     padding: 12px 17px; 
     box-sizing: border-box;
     text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+.btn:hover{
+	background-color: #75e097;
+	color: #fff;
 }
 .btn-header{
 	display: inline-block;
@@ -864,6 +875,12 @@ font-size: 20px;
   background-color: #fff;
   margin-right: 15px;
 }
+
+.btn-img:hover{
+	background-color: transparent;
+	color: #000;
+}
+
 .teacher-sm-title{
 	font-family: 'FuturaPT Demi', sans-serif;
 	font-size: 20px;
@@ -1001,6 +1018,14 @@ font-size: 20px;
 
 .table-link{
 	border: 0;
+}
+
+.table-link:hover{
+	padding-left: 63px;
+	padding-right: 63px;
+	padding-bottom: 12px;
+	padding-top: 12px;
+
 }
 
 td:nth-child(1){width: 14%; }
@@ -1223,6 +1248,7 @@ input{
     background-image: url(../images/sprites/social.png);
     background-repeat: no-repeat;
     display: block;
+
 }
 
 .sprite-facebook-1 {
