@@ -78,6 +78,15 @@ ul{
 	margin: 0;
 }
 
+.map {
+  width: 100%;
+  height: 300px;
+}
+
+.large-map {
+  height: 600px;
+}
+
 .container{
 	width: 1160px;
 	padding: 0 30px;
