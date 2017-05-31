@@ -5,7 +5,7 @@
   <title>snow school</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="js/script.js">
+  
 </head>
 
 <body>
@@ -217,12 +217,8 @@
 <!-- <section class="map"> -->
     
       <!-- <div class="map-item"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.5539750273726!2d30.316544015742323!3d59.95613378188255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963169ff515305%3A0xf1202446f3a0b708!2z0JPQvtGA0YzQutC-0LLRgdC60LDRjw!5e0!3m2!1sru!2sru!4v1494175273434" width="1160" height="360" frameborder="0" style="border:0" allowfullscreen></iframe></div> -->
-      <div id="map" class="map"></div>
-<!-- ВНИМАНИЕ! Тут использован мой ключ! key=AIzaSyDjGAiz42P2243i_aoNCu4Pf0vU_xDWcZk — ключ -->
-<!-- ВНИМАНИЕ! Заведите и используйте свой ключ! -->
-<!-- https://developers.google.com/maps/documentation/javascript/get-api-key?hl=ru#key -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoHHJQLvtjHOa3XtjhbTXFO51aGvyffdw"></script>
-  
+
+  <div id="map" class="map"></div>
 <!-- </section> -->
 </div>
 <!--Участники-->
@@ -279,5 +275,9 @@
     </div>
     </div>
   </footer>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoHHJQLvtjHOa3XtjhbTXFO51aGvyffdw&signed_in=true&callback=initMap"></script>
+  <script src="js/script.js"></script>
+  
 </body>
 </html>

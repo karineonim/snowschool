@@ -6,16 +6,11 @@
 var mapPoints = [
   [
     'Точка на карте', 
-    59.95016094, 
-    30.31612718, 
+    59.956132, 
+30.318733,  
     '<div class="some-class"><h2>Заголовок</h2><p>Лорем ипсум долор хрень какая-то, но видно, что это самая обычная разметка</p></div>'
   ],
-  [
-    'Вторая точка на карте', 
-    59.94216094, 
-    30.30512718, 
-    '<div class="some-class">Какой-то контент</div>'
-  ],
+ 
 ];
 
 // Стилизация карты
@@ -83,7 +78,7 @@ function setMapMarkers(map) {
     var marker = new google.maps.Marker({
       position: {lat: point[1], lng: point[2]},
       map: map,
-      icon: image,
+      //icon: image,
       title: point[0],
       html: point[3],
     });
